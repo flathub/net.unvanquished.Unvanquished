@@ -23,19 +23,19 @@
 
   <screenshots>
     <screenshot type="default">
-      <image type="source">https://unvanquished.net/wp-content/uploads/2021/04/perseus_tyrant.jpg</image>
+      <image type="source">https://unvanquished.net/wp-content/uploads/2021/06/20210619-143221-002.unvanquished-0.52.1-battlesuit-facing-tyrant.jpg</image>
     </screenshot>
     <screenshot>
       <image type="source">https://unvanquished.net/wp-content/uploads/2021/05/20210504-082658-002.unvanquished-0.52-human-builder.jpg</image>
     </screenshot>
     <screenshot>
-      <image type="source">https://unvanquished.net/wp-content/uploads/2020/09/20200909-025733-001.unvanquished-rocket-missile.jpg</image>
+      <image type="source">https://unvanquished.net/wp-content/uploads/2021/06/20200909-025733-002.unvanquished-rocket-missile.jpg</image>
     </screenshot>
     <screenshot>
       <image type="source">https://unvanquished.net/wp-content/uploads/2021/05/20210504-081116-002.unvanquished-0.52-alien-team.jpg</image>
     </screenshot>
     <screenshot>
-      <image type="source">https://unvanquished.net/wp-content/uploads/2020/09/20200909-001900-000.unvanquished-lasgun-weapon.jpg</image>
+      <image type="source">https://unvanquished.net/wp-content/uploads/2021/06/20200909-001900-002.unvanquished-lasgun-weapon.jpg</image>
     </screenshot>
     <screenshot>
       <image type="source">https://unvanquished.net/wp-content/uploads/2021/05/20210504-083923-002.unvanquished-0.52-alien-builder.jpg</image>
@@ -50,11 +50,20 @@
   <url type="help">https://wiki.unvanquished.net/wiki/Main_Page</url>
 
   <releases>
+    <release version="0.52.1" date="2021-06-20">
+      <description>
+        <p>
+          This update brings some bug fixes and marks the first point release
+          in Unvanquished 0.52 beta development cycle.
+        </p>
+      </description>
+      <url>https://unvanquished.net/unvanquished-0-52-1-better-freer-stronger/</url>
+    </release>
     <release version="0.52.0" date="2021-05-14">
       <description>
         <p>
           The first beta release, coming after years of continuous work
-          both on the engine and the game itself
+          both on the engine and the game itself.
         </p>
       </description>
       <url>https://unvanquished.net/unvanquished-0-52-beta-is-there/</url>
