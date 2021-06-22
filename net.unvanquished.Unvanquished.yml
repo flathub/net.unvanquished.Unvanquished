@@ -39,14 +39,14 @@ modules:
       - -DOpenGL_GL_PREFERENCE=LEGACY # https://github.com/DaemonEngine/Daemon/issues/474
     sources:
       - type: git
-        url: https://github.com/DaemonEngine/Daemon
+        url: https://github.com/DaemonEngine/Daemon.git
         tag: unvanquished/0.52.1
       - type: file
         path: net.unvanquished.Unvanquished.metainfo.xml
       - type: file
         path: net.unvanquished.Unvanquished.desktop
       - type: file
-        url: https://raw.githubusercontent.com/Unvanquished/Unvanquished/master/dist/icons/512x512/unvanquished.png
+        url: https://raw.githubusercontent.com/Unvanquished/Unvanquished/e1b0a1f9a7306126940dffb94d6ced036fe970b2/dist/icons/512x512/unvanquished.png
         sha256: d49b6edb49917f7a87497129e8e71ce396027361016fac01c093fb5564f7dee1
       - type: archive
         dest: external_deps/linux64-5
