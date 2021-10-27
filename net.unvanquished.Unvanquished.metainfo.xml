@@ -3,7 +3,7 @@
 <component type="desktop-application">
   <id>net.unvanquished.Unvanquished</id>
   <metadata_license>CC-BY-SA-3.0</metadata_license>
-  <project_license>MIT AND GPL-3.0-only AND Zlib AND BSD-3-Clause AND CC0-1.0 AND CC-BY-2.5 AND CC-BY-SA-2.5 AND CC-BY-SA-3.0 AND CC-BY-SA-4.0</project_license>
+  <project_license>MIT AND GPL-3.0-or-later AND Zlib AND BSD-3-Clause</project_license>
   <name>Unvanquished</name>
   <summary>A fast paced, first person strategy game</summary>
 
