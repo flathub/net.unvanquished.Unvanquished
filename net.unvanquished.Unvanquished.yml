@@ -7,8 +7,9 @@ finish-args:
   - --share=network
   - --socket=pulseaudio # sound
   - --device=dri # OpenGL
+  - --socket=wayland # Wayland access (used as a fallback by SDL if x11 fails)
   - --socket=x11 # X11 access
-  - --share=ipc # X shared memory (for performance)
+  - --share=ipc # X shared memory, required for x11
 cleanup:
   - /share/doc
 modules:
