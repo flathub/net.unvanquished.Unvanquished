@@ -11,7 +11,7 @@ diff --git a/src/engine/framework/System.cpp b/src/engine/framework/System.cpp
 index b0cda3cb..cc7233cd 100644
 --- a/src/engine/framework/System.cpp
 +++ b/src/engine/framework/System.cpp
-@@ -440,7 +440,7 @@ static void ParseCmdline(int argc, char** argv, cmdlineArgs_t& cmdlineArgs)
+@@ -457,7 +457,7 @@ static void ParseCmdline(int argc, char** argv, cmdlineArgs_t& cmdlineArgs)
  		// Any arguments after the URI are discarded.
  		if (Str::IsIEqual("-connect", argv[i])) {
  			if (argc < i + 2) {
@@ -19,7 +19,7 @@ index b0cda3cb..cc7233cd 100644
 +				Log::Notice("Ignoring -connect parameter as no server was provided");
  				break;
  			}
- 			cmdlineArgs.uriText = argv[i + 1];
+ 
 -- 
 2.31.1
 

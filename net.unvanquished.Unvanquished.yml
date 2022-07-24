@@ -1,6 +1,6 @@
 app-id: net.unvanquished.Unvanquished
 runtime: org.freedesktop.Platform
-runtime-version: '20.08'
+runtime-version: '21.08'
 sdk: org.freedesktop.Sdk
 command: unvanquished
 finish-args:
@@ -34,14 +34,13 @@ modules:
       - -DBUILD_TTY_CLIENT=FALSE
       - -DBUILD_SERVER=FALSE
       - -DUSE_CURSES=FALSE # broken, not sure why
-      - -DUSE_GEOIP=FALSE # this is mostly useful for server anyway
       - -DUSE_HARDENING=TRUE
       - -DUSE_LTO=TRUE
       - -DOpenGL_GL_PREFERENCE=LEGACY # https://github.com/DaemonEngine/Daemon/issues/474
     sources:
       - type: git
         url: https://github.com/DaemonEngine/Daemon.git
-        tag: unvanquished/0.52.1
+        commit: a5c48479de66913b0766d2a12cae92786b41fbf8
       - type: file
         path: net.unvanquished.Unvanquished.metainfo.xml
       - type: file
@@ -51,8 +50,8 @@ modules:
         sha256: d49b6edb49917f7a87497129e8e71ce396027361016fac01c093fb5564f7dee1
       - type: archive
         dest: external_deps/linux64-5
-        url: https://dl.unvanquished.net/deps/linux64-5.tar.bz2
-        sha256: 0dc5a58403926b0fb4680fb64220cc10b58c83e8871e7c59285ff5161287eb17
+        url: https://dl.unvanquished.net/deps/linux64-6.tar.bz2
+        sha256: 09892ebf7a59c34859b548650cc8e86755bac620d0d32b2ff2be4fa46bdeaa7c
       - type: patch
         path: 0001-Suppress-a-warning.patch
         use-git-am: true
@@ -71,7 +70,10 @@ modules:
     buildsystem: simple
     build-commands:
       - install -Dm0755 -t /app/bin/ unvanquished
+      - install -Dm0644 -t /app/pkg/ unvanquished_0.52.2+0.53.0pre.dpk
     sources:
+      - type: file
+        path: unvanquished_0.52.2+0.53.0pre.dpk
       - type: script
         commands:
           - /app/lib/daemon -pakpath /app/pkg "$@"
