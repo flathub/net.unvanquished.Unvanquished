@@ -5,11 +5,14 @@
   <metadata_license>CC-BY-SA-3.0</metadata_license>
   <project_license>MIT AND GPL-3.0-or-later AND Zlib AND BSD-3-Clause</project_license>
   <name>Unvanquished</name>
-  <summary>A fast paced, first person strategy game</summary>
+  <summary>Fast paced, first person strategy game</summary>
 
   <description>
     <p>
-      Unvanquished is a strategy game played on the first person.
+      Unvanquished is a real-time strategy game played as a first-person
+      shooter where evolving aliens and heavily armed humans fight for
+      their survival.
+
       Become a marine, handle your big weapon and dress that
       impressive exoskeleton to save the human race like a boss. Or if
       you prefer, be a monstrous beast and save those cute grangers
@@ -46,10 +49,18 @@
   </screenshots>
 
   <url type="homepage">https://unvanquished.net</url>
-  <url type="bugtracker">https://github.com/Unvanquished/Unvanquished/issues</url>
-  <url type="help">https://wiki.unvanquished.net/wiki/Main_Page</url>
+  <url type="bugtracker">https://bugs.unvanquished.net</url>
+  <url type="help">https://wiki.unvanquished.net</url>
 
   <releases>
+    <release version="0.53.0" date="2022-07-31">
+      <description>
+        <p>
+          This large update comes with HUD improvements, better bots, updated Parpax map and many bug fixes.
+        </p>
+      </description>
+      <url>https://unvanquished.net/unvanquished-0-53-beta-what-a-milestone/</url>
+    </release>
     <release version="0.52.1" date="2021-06-20">
       <description>
         <p>
