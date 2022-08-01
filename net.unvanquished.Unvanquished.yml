@@ -21,8 +21,8 @@ modules:
       - mv pkg /app/pkg
     sources:
       - type: archive
-        url: https://dl.unvanquished.net/release/unvanquished_0.52.1.zip
-        sha256: 63cd62daafbedf5870951e36b665dfa90c10193fa442192e8f6cf841526e0abf
+        url: https://dl.unvanquished.net/release/unvanquished_0.53.0.zip
+        sha256: f5bd069442c58622814aa41e355d3a656f36581a5682eb8f359ba2b05f66e8d2
 
   - name: daemon
     buildsystem: cmake-ninja
