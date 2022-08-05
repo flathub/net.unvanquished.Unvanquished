@@ -4,6 +4,7 @@
   <id>net.unvanquished.Unvanquished</id>
   <metadata_license>CC-BY-SA-3.0</metadata_license>
   <project_license>MIT AND GPL-3.0-or-later AND Zlib AND BSD-3-Clause</project_license>
+  <developer_name>Unvanquished Development</developer_name>
   <name>Unvanquished</name>
   <summary>Fast paced, first person strategy game</summary>
 
