@@ -7,7 +7,7 @@ finish-args:
   - --share=network
   - --socket=pulseaudio # sound
   - --device=dri # OpenGL
-  - --socket=wayland # Wayland access (used as a fallback by SDL if x11 fails)
+  - --socket=wayland # Wayland access (used as a fallback by SDL if X11 fails)
   - --socket=x11 # X11 access
   - --share=ipc # X shared memory, required for x11
 cleanup:
@@ -21,8 +21,8 @@ modules:
       - mv pkg /app/pkg
     sources:
       - type: archive
-        url: https://dl.unvanquished.net/release/unvanquished_0.53.0.zip
-        sha256: f5bd069442c58622814aa41e355d3a656f36581a5682eb8f359ba2b05f66e8d2
+        url: https://dl.unvanquished.net/release/unvanquished_0.53.1.zip
+        sha256: 10f469c4ff8d05a628dadf19282e5a770f81b6159b0cf2fac0ff81edfa7eb999
 
   - name: daemon
     buildsystem: cmake-ninja
@@ -40,7 +40,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/DaemonEngine/Daemon.git
-        tag: unvanquished/0.53.0
+        tag: unvanquished/0.53.1
       - type: file
         path: net.unvanquished.Unvanquished.metainfo.xml
       - type: file
