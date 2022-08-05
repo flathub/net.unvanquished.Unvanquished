@@ -12,7 +12,7 @@ This repository provides the sources for building the Unvanquished flatpak packa
 Contributing
 ------------
 
-Bugs related to the game itself have to be reported on the game [issue tracker](https://github.com/Unvanquished/Unvanquished/issues).
+Bugs related to the game itself have to be reported on the game [issue tracker](https://bugs.unvanquished.net).
 
 Packaging issues related to this flatpak have to be reported on the [issue tracker](https://github.com/flathub/net.unvanquished.Unvanquished/issues) of this repository.
 
