@@ -53,10 +53,20 @@
   <url type="help">https://wiki.unvanquished.net</url>
 
   <releases>
+    <release version="0.53.1" date="2022-08-04">
+      <description>
+        <p>
+          This update fixes the unexpected disconnection bug, restore modified
+          gravity in maps and makes some text more readable.
+        </p>
+      </description>
+      <url>https://unvanquished.net/unvanquished-0-53-beta-what-a-milestone/</url>
+    </release>
     <release version="0.53.0" date="2022-07-31">
       <description>
         <p>
-          This large update comes with HUD improvements, better bots, updated Parpax map and many bug fixes.
+          This large update comes with HUD improvements, better bots,
+          updated Parpax map and many bug fixes.
         </p>
       </description>
       <url>https://unvanquished.net/unvanquished-0-53-beta-what-a-milestone/</url>
