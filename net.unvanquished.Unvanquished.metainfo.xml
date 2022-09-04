@@ -54,10 +54,19 @@
   <url type="help">https://wiki.unvanquished.net</url>
 
   <releases>
+    <release version="0.53.2" date="2022-09-04">
+      <description>
+        <p>
+          This update fixes rendering issues with legacy Tremulous maps
+          and restore the granger slow blob!
+        </p>
+      </description>
+      <url>https://unvanquished.net/unvanquished-0-53-2-refinements/</url>
+    </release>
     <release version="0.53.1" date="2022-08-04">
       <description>
         <p>
-          This update fixes the unexpected disconnection bug, restore modified
+          This update fixes the unexpected disconnection bug, restores modified
           gravity in maps and makes some text more readable.
         </p>
       </description>
