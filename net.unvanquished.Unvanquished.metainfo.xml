@@ -57,8 +57,9 @@
     <release version="0.53.2" date="2022-09-04">
       <description>
         <p>
-          This update fixes rendering issues with legacy Tremulous maps
-          and restore the granger slow blob!
+          This update fixes rendering issues with legacy Tremulous maps,
+          restores the granger slow blob, and the regression preventing to
+          type Unicode characters in chat is now!
         </p>
       </description>
       <url>https://unvanquished.net/unvanquished-0-53-2-refinements/</url>
