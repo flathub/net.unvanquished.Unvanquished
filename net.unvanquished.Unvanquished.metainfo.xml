@@ -59,7 +59,7 @@
         <p>
           This update fixes rendering issues with legacy Tremulous maps,
           restores the granger slow blob, and the regression preventing to
-          type Unicode characters in chat is now!
+          type Unicode characters in chat is now gone!
         </p>
       </description>
       <url>https://unvanquished.net/unvanquished-0-53-2-refinements/</url>
