@@ -77,7 +77,7 @@ modules:
         use-git-am: true
     no-make-install: true # no install phase is defined, we need a custom one
     post-install:
-      - > 
+      - >
         if [ -f nacl_helper_bootstrap-armhf ]
         then
           install -Dm0755 -t /app/lib nacl_helper_bootstrap-armhf
