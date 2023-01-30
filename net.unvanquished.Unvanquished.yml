@@ -49,7 +49,7 @@ modules:
         url: https://raw.githubusercontent.com/Unvanquished/Unvanquished/e1b0a1f9a7306126940dffb94d6ced036fe970b2/dist/icons/512x512/unvanquished.png
         sha256: d49b6edb49917f7a87497129e8e71ce396027361016fac01c093fb5564f7dee1
       - type: archive
-        dest: external_deps/linux64-8
+        dest: external_deps/linux-amd64-default_8
         url: https://dl.unvanquished.net/deps/linux-amd64-default_8.tar.xz
         sha512: 9402b38151312e3999a6ba40e53043ad91a3a9d158c6ac05ae9e88f275d38432a9b5ad5fa393806915fdc5cdde4261c47fb37644654b3bf806760810276d4c67
       - type: patch
