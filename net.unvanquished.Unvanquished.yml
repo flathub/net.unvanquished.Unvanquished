@@ -10,6 +10,7 @@ finish-args:
   - --socket=wayland # Wayland access (used as a fallback by SDL if X11 fails)
   - --socket=x11 # X11 access
   - --share=ipc # X shared memory, required for x11
+  - --allow=multiarch
 cleanup:
   - /share/doc
 modules:
@@ -98,6 +99,3 @@ modules:
         commands:
           - /app/lib/daemon -pakpath /app/pkg "$@"
         dest-filename: unvanquished
-
-finish-args:
-  - --allow=multiarch
