@@ -88,7 +88,7 @@ modules:
       - > 
         if [ -d lib-armhf ]; then
           install -Dm0755 -d /app/lib/lib-armhf
-          for f in ld-linux-armhf libc.so.6 libgcc_s.so.1 libm.so.6 libpthread.so.0 librt.so.1 libstdc++.so.6; do
+          for f in lib-armhf/*
             install -Dm0644 -t /app/lib/lib-armhf/ $f
           done
         fi
