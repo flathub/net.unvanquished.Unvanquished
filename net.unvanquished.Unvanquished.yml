@@ -96,5 +96,6 @@ modules:
     sources:
       - type: script
         commands:
-          - /app/lib/daemon -pakpath /app/pkg "$@"
+		  - cd /app/lib
+          - ./daemon -pakpath /app/pkg "$@"
         dest-filename: unvanquished
