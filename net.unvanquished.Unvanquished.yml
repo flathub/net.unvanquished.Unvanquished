@@ -81,7 +81,18 @@ modules:
         for f in daemon nacl_loader nacl_helper_bootstrap; do
           install -Dm0755 -t /app/lib/ $f
         done
-      - install -Dm0644 -t /app/lib/ irt_core-amd64.nexe
+      - >
+        if [ -f nacl_helper_bootstrap-armhf ]; then
+          install -Dm0755 -t /app/lib/ nacl_helper_bootstrap-armhf
+        fi
+      - > 
+        if [ -d lib-armhf ]; then
+          install -Dm0755 -d /app/lib/lib-armhf
+          for f in ld-linux-armhf libc.so.6 libgcc_s.so.1 libm.so.6 libpthread.so.0 librt.so.1 libstdc++.so.6; do
+            install -Dm0644 -t /app/lib/lib-armhf/ $f
+          done
+        fi
+      - install -Dm0644 -t /app/lib/ irt_core-*.nexe
       - install -Dm0644 -t /app/share/applications/ net.unvanquished.Unvanquished.desktop
       - install -Dm0644 -t /app/share/metainfo/ net.unvanquished.Unvanquished.metainfo.xml
       - install -Dm0644 unvanquished.png /app/share/icons/hicolor/512x512/apps/$FLATPAK_ID.png
