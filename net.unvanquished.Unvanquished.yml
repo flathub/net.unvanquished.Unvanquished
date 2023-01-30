@@ -77,30 +77,23 @@ modules:
         use-git-am: true
     no-make-install: true # no install phase is defined, we need a custom one
     post-install:
-      - >
-        for f in daemon nacl_loader nacl_helper_bootstrap; do
-          install -Dm0755 -t /app/lib/ $f
-        done
-      - >
-        if [ -f nacl_helper_bootstrap-armhf ]; then
-          install -Dm0755 -t /app/lib/ nacl_helper_bootstrap-armhf
-        fi
       - > 
-        if [ -d lib-armhf ]; then
+        if [ -f nacl_helper_bootstrap-armhf ]
+        then
+          install -Dm0755 -t /app/lib nacl_helper_bootstrap-armhf
           install -Dm0755 -d /app/lib/lib-armhf
-          for f in lib-armhf/*
-            install -Dm0644 -t /app/lib/lib-armhf/ $f
-          done
+          install -Dm0644 -t /app/lib/lib-armhf lib-armhf/*
         fi
-      - install -Dm0644 -t /app/lib/ irt_core-*.nexe
-      - install -Dm0644 -t /app/share/applications/ net.unvanquished.Unvanquished.desktop
-      - install -Dm0644 -t /app/share/metainfo/ net.unvanquished.Unvanquished.metainfo.xml
+      - install -Dm0755 -t /app/lib daemon nacl_loader nacl_helper_bootstrap
+      - install -Dm0644 -t /app/lib irt_core-*.nexe
+      - install -Dm0644 -t /app/share/applications net.unvanquished.Unvanquished.desktop
+      - install -Dm0644 -t /app/share/metainfo net.unvanquished.Unvanquished.metainfo.xml
       - install -Dm0644 unvanquished.png /app/share/icons/hicolor/512x512/apps/$FLATPAK_ID.png
 
   - name: unvanquished
     buildsystem: simple
     build-commands:
-      - install -Dm0755 -t /app/bin/ unvanquished
+      - install -Dm0755 -t /app/bin unvanquished
     sources:
       - type: script
         commands:
