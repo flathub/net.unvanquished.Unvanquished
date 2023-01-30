@@ -49,9 +49,29 @@ modules:
         url: https://raw.githubusercontent.com/Unvanquished/Unvanquished/e1b0a1f9a7306126940dffb94d6ced036fe970b2/dist/icons/512x512/unvanquished.png
         sha256: d49b6edb49917f7a87497129e8e71ce396027361016fac01c093fb5564f7dee1
       - type: archive
+        only-arches:
+          - x86_64
         dest: external_deps/linux-amd64-default_8
         url: https://dl.unvanquished.net/deps/linux-amd64-default_8.tar.xz
         sha512: 9402b38151312e3999a6ba40e53043ad91a3a9d158c6ac05ae9e88f275d38432a9b5ad5fa393806915fdc5cdde4261c47fb37644654b3bf806760810276d4c67
+      - type: archive
+        only-arches:
+          - i386
+        dest: external_deps/linux-i686-default_8
+        url: https://dl.unvanquished.net/deps/linux-i686-default_8.tar.xz
+        sha512: d9021c1fd61dd79e1dffd8f746e44e4fe305cbf2fcbdf2ab30be2b184e5be2c0981a7b4b707d826be28f5db0a2865153ca20f7d385f2a189f9b9474258ee21e2
+      - type: archive
+        only-arches:
+          - aarch64
+        dest: external_deps/linux-arm64-default_8
+        url: https://dl.unvanquished.net/deps/linux-arm64-default_8.tar.xz
+        sha512: ae61b917f1d43809abd57500d6f9610716820220e948061961834f8f98f88d833baa324da3b8be359299baf87f346e01b8d0368f1763ef6fd03c438ab71c4644
+      - type: archive
+        only-arches:
+          - arm
+        dest: external_deps/linux-armhf-default_8
+        url: https://dl.unvanquished.net/deps/linux-armhf-default_8.tar.xz
+        sha512: f452cb60aa94fe7954071b314a8ceb249c8a81ef7e04df723e8220710094efdb5ce27b8abea7b68b32222f5e6bbd626a186e745eda560723d4764bd9e91a3ee7
       - type: patch
         path: 0001-Suppress-a-warning.patch
         use-git-am: true
