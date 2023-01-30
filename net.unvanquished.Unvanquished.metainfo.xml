@@ -54,6 +54,15 @@
   <url type="help">https://wiki.unvanquished.net</url>
 
   <releases>
+    <release version="0.54.0" date="2023-01-30">
+      <description>
+        <p>
+          This update brings automatic server-side navigation mesh generation,
+          many fixes and improvements.
+        </p>
+      </description>
+      <url>https://unvanquished.net/unvanquished-0-54-armed-and-dangerous/</url>
+    </release>
     <release version="0.53.2" date="2022-09-04">
       <description>
         <p>

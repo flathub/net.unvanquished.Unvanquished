@@ -21,8 +21,8 @@ modules:
       - mv pkg /app/pkg
     sources:
       - type: archive
-        url: https://dl.unvanquished.net/release/unvanquished_0.53.2.zip
-        sha256: 3ad7888ecdcda7ce946d00f18caf055b0624ac32c9b67cc661c1a8de80e36fe1
+        url: https://dl.unvanquished.net/release/unvanquished_0.54.0.zip
+        sha512: 186eb8570d23d74c8a08a84edc379d3d8fdddfb385e5c7a42fc2691e3dab64e5e0c96d6493d9f49ca3dc8a78a891018ccd3449a8f1ba6549a63ccd0ac2fc9294
 
   - name: daemon
     buildsystem: cmake-ninja
@@ -40,7 +40,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/DaemonEngine/Daemon.git
-        tag: unvanquished/0.53.2
+        tag: unvanquished/0.54.0
       - type: file
         path: net.unvanquished.Unvanquished.metainfo.xml
       - type: file
@@ -49,9 +49,9 @@ modules:
         url: https://raw.githubusercontent.com/Unvanquished/Unvanquished/e1b0a1f9a7306126940dffb94d6ced036fe970b2/dist/icons/512x512/unvanquished.png
         sha256: d49b6edb49917f7a87497129e8e71ce396027361016fac01c093fb5564f7dee1
       - type: archive
-        dest: external_deps/linux64-6
-        url: https://dl.unvanquished.net/deps/linux64-6.tar.bz2
-        sha256: 09892ebf7a59c34859b548650cc8e86755bac620d0d32b2ff2be4fa46bdeaa7c
+        dest: external_deps/linux64-8
+        url: https://dl.unvanquished.net/deps/linux-amd64-default_8.tar.xz
+        sha512: 9402b38151312e3999a6ba40e53043ad91a3a9d158c6ac05ae9e88f275d38432a9b5ad5fa393806915fdc5cdde4261c47fb37644654b3bf806760810276d4c67
       - type: patch
         path: 0001-Suppress-a-warning.patch
         use-git-am: true
@@ -61,7 +61,7 @@ modules:
         for f in daemon nacl_loader nacl_helper_bootstrap; do
           install -Dm0755 -t /app/lib/ $f
         done
-      - install -Dm0644 -t /app/lib/ irt_core-x86_64.nexe
+      - install -Dm0644 -t /app/lib/ irt_core-amd64.nexe
       - install -Dm0644 -t /app/share/applications/ net.unvanquished.Unvanquished.desktop
       - install -Dm0644 -t /app/share/metainfo/ net.unvanquished.Unvanquished.metainfo.xml
       - install -Dm0644 unvanquished.png /app/share/icons/hicolor/512x512/apps/$FLATPAK_ID.png
