@@ -98,3 +98,6 @@ modules:
         commands:
           - /app/lib/daemon -pakpath /app/pkg "$@"
         dest-filename: unvanquished
+
+finish-args:
+  - --allow=multiarch
