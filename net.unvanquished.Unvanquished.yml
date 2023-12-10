@@ -21,8 +21,8 @@ modules:
       - mv pkg /app/pkg
     sources:
       - type: archive
-        url: https://dl.unvanquished.net/release/unvanquished_0.54.0.zip
-        sha512: 186eb8570d23d74c8a08a84edc379d3d8fdddfb385e5c7a42fc2691e3dab64e5e0c96d6493d9f49ca3dc8a78a891018ccd3449a8f1ba6549a63ccd0ac2fc9294
+        url: https://dl.unvanquished.net/release/unvanquished_0.54.1.zip
+        sha512: 0a8e9091fe50bdb6153c488908807713f570b19e8c97fa4a6c5dc84224a5799088b6726e899f9356da94ac811ff7649be0c56f2720b2027cce036966f652e583
 
   - name: daemon
     buildsystem: cmake-ninja
@@ -36,11 +36,10 @@ modules:
       - -DUSE_CURSES=FALSE # broken, not sure why
       - -DUSE_HARDENING=TRUE
       - -DUSE_LTO=TRUE
-      - -DOpenGL_GL_PREFERENCE=LEGACY # https://github.com/DaemonEngine/Daemon/issues/474
     sources:
       - type: git
         url: https://github.com/DaemonEngine/Daemon.git
-        tag: unvanquished/0.54.0
+        tag: unvanquished/0.54.1
       - type: file
         path: net.unvanquished.Unvanquished.metainfo.xml
       - type: file
@@ -49,9 +48,9 @@ modules:
         url: https://raw.githubusercontent.com/Unvanquished/Unvanquished/e1b0a1f9a7306126940dffb94d6ced036fe970b2/dist/icons/512x512/unvanquished.png
         sha256: d49b6edb49917f7a87497129e8e71ce396027361016fac01c093fb5564f7dee1
       - type: archive
-        dest: external_deps/linux-amd64-default_8
-        url: https://dl.unvanquished.net/deps/linux-amd64-default_8.tar.xz
-        sha512: 9402b38151312e3999a6ba40e53043ad91a3a9d158c6ac05ae9e88f275d38432a9b5ad5fa393806915fdc5cdde4261c47fb37644654b3bf806760810276d4c67
+        dest: external_deps/linux-amd64-default_10
+        url: https://dl.unvanquished.net/deps/linux-amd64-default_10.tar.xz
+        sha512: 0ed376e40c8cf1645437d653dcb47b687f3766d076592093f501c58cadab748edf3aed6ecbcad777e99546025aa7ce3fef55a5f73d18daf4e7f338832b859fe5
       - type: patch
         path: 0001-Suppress-a-warning.patch
         use-git-am: true
