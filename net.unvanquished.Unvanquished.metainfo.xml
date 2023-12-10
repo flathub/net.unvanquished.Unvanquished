@@ -54,6 +54,15 @@
   <url type="help">https://wiki.unvanquished.net</url>
 
   <releases>
+    <release version="0.54.1" date="2023-12-10">
+      <description>
+        <p>
+          This update brings better bots, translations, more performance,
+          featured servers…
+        </p>
+      </description>
+      <url>https://unvanquished.net/unvanquished-0-54-1-is-here/</url>
+    </release>
     <release version="0.54.0" date="2023-01-30">
       <description>
         <p>
