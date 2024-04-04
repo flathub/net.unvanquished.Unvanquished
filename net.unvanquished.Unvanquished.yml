@@ -7,8 +7,8 @@ finish-args:
   - --share=network
   - --socket=pulseaudio # sound
   - --device=dri # OpenGL
-  - --socket=wayland # Wayland access (used as a fallback by SDL if X11 fails)
-  - --socket=x11 # X11 access
+  - --socket=wayland # Wayland access
+  - --socket=fallback-x11 # Fallback to X11, if wayland isn't available 
   - --share=ipc # X shared memory, required for x11
   - --env=SDL_VIDEODRIVER=x11,wayland # Ask SDL to try x11 first
 cleanup:
