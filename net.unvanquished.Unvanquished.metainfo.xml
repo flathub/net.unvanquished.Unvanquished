@@ -54,6 +54,16 @@
   <url type="help">https://wiki.unvanquished.net</url>
 
   <releases>
+    <release version="0.55.0" date="2024-10-20">
+      <description>
+        <p>
+          This update brings translations, and many engine improvements:
+          new features, bugfixes, compatibility with the large amount
+          of community maps and performance improvement.
+        </p>
+      </description>
+      <url>https://unvanquished.net/unvanquished-0-55-awesomeness-has-arrived/</url>
+    </release>
     <release version="0.54.1" date="2023-12-10">
       <description>
         <p>
@@ -66,8 +76,8 @@
     <release version="0.54.0" date="2023-01-30">
       <description>
         <p>
-          This update brings automatic server-side navigation mesh generation,
-          many fixes and improvements.
+          This update brings automatic server-side navigation mesh generation
+          and many fixes and improvements.
         </p>
       </description>
       <url>https://unvanquished.net/unvanquished-0-54-armed-and-dangerous/</url>

@@ -1,6 +1,6 @@
 app-id: net.unvanquished.Unvanquished
 runtime: org.freedesktop.Platform
-runtime-version: '23.08'
+runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
 command: unvanquished
 finish-args:
@@ -10,6 +10,7 @@ finish-args:
   - --socket=wayland # Wayland access (used as a fallback by SDL if X11 fails)
   - --socket=x11 # X11 access
   - --share=ipc # X shared memory, required for x11
+  - --env=SDL_VIDEODRIVER=x11,wayland # Ask SDL to try x11 first
 cleanup:
   - /share/doc
 modules:
@@ -21,8 +22,8 @@ modules:
       - mv pkg /app/pkg
     sources:
       - type: archive
-        url: https://dl.unvanquished.net/release/unvanquished_0.54.1.zip
-        sha512: 0a8e9091fe50bdb6153c488908807713f570b19e8c97fa4a6c5dc84224a5799088b6726e899f9356da94ac811ff7649be0c56f2720b2027cce036966f652e583
+        url: https://dl.unvanquished.net/release/unvanquished_0.55.0.zip
+        sha512: 2e2a02be4cda177b0e243b0fde67d91f4103349ffb9118c5f23c68892403a058f021ade5538a66d74f398951b1af6e30fa4482b3de758591de4a8281eebc3962
 
   - name: daemon
     buildsystem: cmake-ninja
@@ -39,7 +40,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/DaemonEngine/Daemon.git
-        tag: unvanquished/0.54.1
+        tag: unvanquished/0.55.0
       - type: file
         path: net.unvanquished.Unvanquished.metainfo.xml
       - type: file
@@ -51,9 +52,6 @@ modules:
         dest: external_deps/linux-amd64-default_10
         url: https://dl.unvanquished.net/deps/linux-amd64-default_10.tar.xz
         sha512: 0ed376e40c8cf1645437d653dcb47b687f3766d076592093f501c58cadab748edf3aed6ecbcad777e99546025aa7ce3fef55a5f73d18daf4e7f338832b859fe5
-      - type: patch
-        path: 0001-Suppress-a-warning.patch
-        use-git-am: true
     no-make-install: true # no install phase is defined, we need a custom one
     post-install:
       - >
