@@ -10,6 +10,7 @@ finish-args:
   - --socket=wayland # Wayland access (used as a fallback by SDL if X11 fails)
   - --socket=x11 # X11 access
   - --share=ipc # X shared memory, required for x11
+  - --env=SDL_VIDEODRIVER=x11,wayland # Ask SDL to try x11 first
 cleanup:
   - /share/doc
 modules:
