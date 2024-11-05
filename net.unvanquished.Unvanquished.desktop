@@ -6,5 +6,5 @@ Type=Application
 Terminal=false
 Exec=unvanquished -connect %u
 MimeType=x-scheme-handler/unv
-Categories=Game;ActionGame;StrategyGame;
+Categories=Game;ActionGame;StrategyGame;Shooter;
 Icon=net.unvanquished.Unvanquished
