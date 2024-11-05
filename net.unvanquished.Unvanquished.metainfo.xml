@@ -54,6 +54,15 @@
   <url type="help">https://wiki.unvanquished.net</url>
 
   <releases>
+    <release version="0.55.1" date="2024-11-03">
+      <description>
+        <p>
+          This update brings better bots, improvements for the user interface,
+          and bugfixes for maps and the rendering of specific textures and fog.
+        </p>
+      </description>
+      <url>https://unvanquished.net/unvanquished-0-55-1-lets-polish-it/</url>
+    </release>
     <release version="0.55.0" date="2024-10-20">
       <description>
         <p>
