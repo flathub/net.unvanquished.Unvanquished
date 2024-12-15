@@ -22,8 +22,8 @@ modules:
       - mv pkg /app/pkg
     sources:
       - type: archive
-        url: https://dl.unvanquished.net/release/unvanquished_0.55.1.zip
-        sha512: a35e74b87a8aeaeca8c0f0523e575f17735d00bf8869f09ab9c4355b34bdb14a19156df73cdcfaed3e6f972b009a71e3ee733268e65f46e4cb2d851792d5191f
+        url: https://dl.unvanquished.net/release/unvanquished_0.55.2.zip
+        sha512: afad41cf040352e6e56b88f499d457d25688417d981ec11658bdec2b2a371ed8e467bc5e64925054b9886c5a76b9c9fe53d44ac4ae6aee02795ab91c6cd1d6d8
 
   - name: daemon
     buildsystem: cmake-ninja
@@ -34,13 +34,14 @@ modules:
       - -DBUILD_GAME_NATIVE_EXE=FALSE
       - -DBUILD_TTY_CLIENT=FALSE
       - -DBUILD_SERVER=FALSE
-      - -DUSE_CURSES=FALSE # broken, not sure why
+      - -DUSE_CURSES=TRUE
+      - -DUSE_CURSES_NCURSES=FALSE # broken, not sure why, use PDCursesMod instead
       - -DUSE_HARDENING=TRUE
       - -DUSE_LTO=TRUE
     sources:
       - type: git
         url: https://github.com/DaemonEngine/Daemon.git
-        tag: unvanquished/0.55.1
+        tag: unvanquished/0.55.2
       - type: file
         path: net.unvanquished.Unvanquished.metainfo.xml
       - type: file
