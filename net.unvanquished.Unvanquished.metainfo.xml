@@ -54,6 +54,15 @@
   <url type="help">https://wiki.unvanquished.net</url>
 
   <releases>
+    <release version="0.55.3" date="2025-04-15">
+      <description>
+        <p>
+          This update brings the vampire mode, new command and vsay menus,
+          along other improvements and bugfixes.
+        </p>
+      </description>
+      <url>https://unvanquished.net/unvanquished-0-55-2-bots-in-the-sky/</url>
+    </release>
     <release version="0.55.2" date="2024-12-15">
       <description>
         <p>
