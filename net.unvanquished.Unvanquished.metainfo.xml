@@ -54,6 +54,15 @@
   <url type="help">https://wiki.unvanquished.net</url>
 
   <releases>
+    <release version="0.55.4" date="2025-05-26">
+      <description>
+        <p>
+          This update fixes a bug disconnecting people from servers when some maps
+          were loaded, improve some visuals and brings better shader compilation times.
+        </p>
+      </description>
+      <url>https://unvanquished.net/unvanquished-0-55-4-spring-cleaning/</url>
+    </release>
     <release version="0.55.3" date="2025-04-15">
       <description>
         <p>
