@@ -22,8 +22,8 @@ modules:
       - mv pkg /app/pkg
     sources:
       - type: archive
-        url: https://dl.unvanquished.net/release/unvanquished_0.55.3.zip
-        sha512: 9890b64b8868543645052231e69b1d7cbe5e4a502133a69143be12275d3ef2ac217e3a412338323c96262be85a13c040b33f23b5b3708e92e4795db436a5532e
+        url: https://dl.unvanquished.net/release/unvanquished_0.55.4.zip
+        sha512: a5fc7bb4baeaf2d4afa265a028f15d11e5e3aa72509f41e9569e876554adc93f9fb427e426e769fc32215556a7285e901e20fd06c513603bd69dcb41a9efadff
 
   - name: daemon
     buildsystem: cmake-ninja
@@ -41,7 +41,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/DaemonEngine/Daemon.git
-        tag: unvanquished/0.55.3
+        tag: unvanquished/0.55.4
       - type: file
         path: net.unvanquished.Unvanquished.metainfo.xml
       - type: file
