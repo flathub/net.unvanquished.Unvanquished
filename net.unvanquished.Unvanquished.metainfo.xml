@@ -54,6 +54,15 @@
   <url type="help">https://wiki.unvanquished.net</url>
 
   <releases>
+    <release version="0.55.5" date="2025-09-28">
+      <description>
+        <p>
+          This update improves the fogging, makes possible to bind the mouse wheel in the menus,
+          fixes toggled rotating doors, and upgrades to SDL3.
+        </p>
+      </description>
+      <url>https://unvanquished.net/unvanquished-0-55-5-polishing-it/</url>
+    </release>
     <release version="0.55.4" date="2025-05-26">
       <description>
         <p>
