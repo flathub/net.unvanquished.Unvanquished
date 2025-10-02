@@ -22,8 +22,8 @@ modules:
       - mv pkg /app/pkg
     sources:
       - type: archive
-        url: https://dl.unvanquished.net/release/unvanquished_0.55.4.zip
-        sha512: a5fc7bb4baeaf2d4afa265a028f15d11e5e3aa72509f41e9569e876554adc93f9fb427e426e769fc32215556a7285e901e20fd06c513603bd69dcb41a9efadff
+        url: https://dl.unvanquished.net/release/unvanquished_0.55.5.zip
+        sha512: dd11791e18352c97842462a00be996e07b2df5d7fb4eac9063d19ed107715aba2953e7ed0b3cbc84088ac938c350984119010be34f89d2e19da3b7bc884c3196
 
   - name: daemon
     buildsystem: cmake-ninja
@@ -34,6 +34,7 @@ modules:
       - -DBUILD_GAME_NATIVE_EXE=FALSE
       - -DBUILD_TTY_CLIENT=FALSE
       - -DBUILD_SERVER=FALSE
+      - -DUSE_EXTERNAL_DEPS_LIBS=FALSE
       - -DUSE_CURSES=TRUE
       - -DUSE_CURSES_NCURSES=FALSE # broken, not sure why, use PDCursesMod instead
       - -DUSE_HARDENING=TRUE
@@ -41,7 +42,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/DaemonEngine/Daemon.git
-        tag: unvanquished/0.55.4
+        tag: unvanquished/0.55.5
       - type: file
         path: net.unvanquished.Unvanquished.metainfo.xml
       - type: file
@@ -50,9 +51,9 @@ modules:
         url: https://raw.githubusercontent.com/Unvanquished/Unvanquished/e1b0a1f9a7306126940dffb94d6ced036fe970b2/dist/icons/512x512/unvanquished.png
         sha256: d49b6edb49917f7a87497129e8e71ce396027361016fac01c093fb5564f7dee1
       - type: archive
-        dest: external_deps/linux-amd64-default_10
-        url: https://dl.unvanquished.net/deps/linux-amd64-default_10.tar.xz
-        sha512: 0ed376e40c8cf1645437d653dcb47b687f3766d076592093f501c58cadab748edf3aed6ecbcad777e99546025aa7ce3fef55a5f73d18daf4e7f338832b859fe5
+        dest: external_deps/linux-amd64-default_11
+        url: https://dl.unvanquished.net/deps/linux-amd64-default_11.tar.xz
+        sha512: 02524ccb4e2fdbb36c052fb527ed42e1424a07b182bbd13d23ee0f763f45331ef33455893763bd691d7b1ee480013e4e2385a59438c691aec3d860cd8f6c4999
     no-make-install: true # no install phase is defined, we need a custom one
     post-install:
       - >
