@@ -54,6 +54,61 @@
   <url type="help">https://wiki.unvanquished.net</url>
 
   <releases>
+    <release version="0.55.5" date="2025-09-28">
+      <description>
+        <p>
+          This update improves the fogging, makes possible to bind the mouse wheel in the menus,
+          fixes toggled rotating doors, and upgrades to SDL3.
+        </p>
+      </description>
+      <url>https://unvanquished.net/unvanquished-0-55-5-polishing-it/</url>
+    </release>
+    <release version="0.55.4" date="2025-05-26">
+      <description>
+        <p>
+          This update fixes a bug disconnecting people from servers when some maps
+          were loaded, improve some visuals and brings better shader compilation times.
+        </p>
+      </description>
+      <url>https://unvanquished.net/unvanquished-0-55-4-spring-cleaning/</url>
+    </release>
+    <release version="0.55.3" date="2025-04-15">
+      <description>
+        <p>
+          This update brings the vampire mode, new command and vsay menus,
+          along other improvements and bugfixes.
+        </p>
+      </description>
+      <url>https://unvanquished.net/unvanquished-0-55-3-tonemapped-vampires/</url>
+    </release>
+    <release version="0.55.2" date="2024-12-15">
+      <description>
+        <p>
+          This update makes bots able to use the jetpack and brings a bunch
+          of bugfixes. It is now possible to use the curses console interface.
+        </p>
+      </description>
+      <url>https://unvanquished.net/unvanquished-0-55-2-bots-in-the-sky/</url>
+    </release>
+    <release version="0.55.1" date="2024-11-03">
+      <description>
+        <p>
+          This update brings better bots, improvements for the user interface,
+          and bugfixes for maps and the rendering of specific textures and fog.
+        </p>
+      </description>
+      <url>https://unvanquished.net/unvanquished-0-55-1-lets-polish-it/</url>
+    </release>
+    <release version="0.55.0" date="2024-10-20">
+      <description>
+        <p>
+          This update brings translations, and many engine improvements:
+          new features, bugfixes, compatibility with the large amount
+          of community maps and performance improvement.
+        </p>
+      </description>
+      <url>https://unvanquished.net/unvanquished-0-55-awesomeness-has-arrived/</url>
+    </release>
     <release version="0.54.1" date="2023-12-10">
       <description>
         <p>
@@ -66,8 +121,8 @@
     <release version="0.54.0" date="2023-01-30">
       <description>
         <p>
-          This update brings automatic server-side navigation mesh generation,
-          many fixes and improvements.
+          This update brings automatic server-side navigation mesh generation
+          and many fixes and improvements.
         </p>
       </description>
       <url>https://unvanquished.net/unvanquished-0-54-armed-and-dangerous/</url>
