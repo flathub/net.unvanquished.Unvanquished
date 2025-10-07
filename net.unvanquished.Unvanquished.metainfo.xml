@@ -56,7 +56,7 @@ Copyright 2021-2025 Thomas Debesse <dev@illwieckz.net>
     </screenshot>
     <screenshot>
       <image type="source">https://unvanquished.net/wp-content/uploads/2021/05/20210504-072808-002.unvanquished-0.52-human-team.jpg</image>
-      <caption>Human players wearing all kinds of suits and various weapons in Forlorn.</caption>
+      <caption>Human players wearing all kinds of armours and various weapons in Forlorn.</caption>
     </screenshot>
   </screenshots>
 
@@ -69,7 +69,7 @@ Copyright 2021-2025 Thomas Debesse <dev@illwieckz.net>
       <description>
         <p>
           This update improves the fogging, makes possible to bind the mouse wheel in the menus,
-          fixes toggled rotating doors, enable Wayland and upgrades to SDL3.
+          fixes toggled rotating doors, enables Wayland and upgrades to SDL3.
         </p>
       </description>
       <url>https://unvanquished.net/unvanquished-0-55-5-polishing-it/</url>
