@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright 2021 Antoine Fontaine <afontain@gnugen.ch> -->
+<!--
+Copyright 2021-2024 Antoine Fontaine <afontain@gnugen.ch>
+Copyright 2021-2025 Thomas Debesse <dev@illwieckz.net>
+-->
+
 <component type="desktop-application">
   <id>net.unvanquished.Unvanquished</id>
   <metadata_license>CC-BY-SA-3.0</metadata_license>
@@ -28,24 +32,31 @@
   <screenshots>
     <screenshot type="default">
       <image type="source">https://unvanquished.net/wp-content/uploads/2021/06/20210619-143221-002.unvanquished-0.52.1-battlesuit-facing-tyrant.jpg</image>
+      <caption>A mighty Tyrant facing a fearless battlesuit in Parpax.</caption>
     </screenshot>
     <screenshot>
       <image type="source">https://unvanquished.net/wp-content/uploads/2021/05/20210504-082658-002.unvanquished-0.52-human-builder.jpg</image>
+      <caption>First person view of an human builder building a turret in Perseus.</caption>
     </screenshot>
     <screenshot>
       <image type="source">https://unvanquished.net/wp-content/uploads/2021/06/20200909-025733-002.unvanquished-rocket-missile.jpg</image>
+      <caption>A rocket passing by the viewer, launched by a rocket pod in Platform 23.</caption>
     </screenshot>
     <screenshot>
       <image type="source">https://unvanquished.net/wp-content/uploads/2021/05/20210504-081116-002.unvanquished-0.52-alien-team.jpg</image>
+      <caption>Family photo of all alien player classes in Platform 23.</caption>
     </screenshot>
     <screenshot>
       <image type="source">https://unvanquished.net/wp-content/uploads/2021/06/20200909-001900-002.unvanquished-lasgun-weapon.jpg</image>
+      <caption>First person view of an human soldier carrying a lasgun in Vega.</caption>
     </screenshot>
     <screenshot>
       <image type="source">https://unvanquished.net/wp-content/uploads/2021/05/20210504-083923-002.unvanquished-0.52-alien-builder.jpg</image>
+      <caption>First person view of an human builder wallwalking in Antares.</caption>
     </screenshot>
     <screenshot>
       <image type="source">https://unvanquished.net/wp-content/uploads/2021/05/20210504-072808-002.unvanquished-0.52-human-team.jpg</image>
+      <caption>Human players wearing all kinds of suits and various weapons in Forlorn.</caption>
     </screenshot>
   </screenshots>
 
@@ -58,7 +69,7 @@
       <description>
         <p>
           This update improves the fogging, makes possible to bind the mouse wheel in the menus,
-          fixes toggled rotating doors, and upgrades to SDL3.
+          fixes toggled rotating doors, enable Wayland and upgrades to SDL3.
         </p>
       </description>
       <url>https://unvanquished.net/unvanquished-0-55-5-polishing-it/</url>
