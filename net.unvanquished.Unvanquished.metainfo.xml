@@ -11,13 +11,21 @@ Copyright 2021-2025 Thomas Debesse <dev@illwieckz.net>
   <developer_name>Unvanquished Development</developer_name>
   <name>Unvanquished</name>
   <summary>Fast paced, first person strategy game</summary>
+  <summary xml:lang="fr">Jeu de stratégie frénétique à la première personne</summary>
 
   <description>
     <p>
       Unvanquished is a real-time strategy game played as a first-person
       shooter where evolving aliens and heavily armed humans fight for
       their survival.
+    </p>
+    <p xml:lang="fr">
+      Unvanquished est un jeu de stratégie en temps réel se jouant à la
+      première personne, où des extraterrestres évolutifs et des humains
+      lourdement armés se battent pour leur survie.
+    </p>
 
+    <p>
       Become a marine, handle your big weapon and dress that
       impressive exoskeleton to save the human race like a boss. Or if
       you prefer, be a monstrous beast and save those cute grangers
@@ -29,6 +37,25 @@ Copyright 2021-2025 Thomas Debesse <dev@illwieckz.net>
       based on the Dæmon game engine with 20 years of development added to
       the Tremulous gameplay and the Quake 3 engine.
     </p>
+    <p xml:lang="fr">
+      Devenez un soldat, prenez en main votre gros flingue et enfilez cet
+      exosquelette impressionnant pour sauver l'humanité comme un chef.
+      Ou, si vous préférez, incarnez une bête monstrueuse et sauvez ces
+      adorables grangers de ces envahisseurs bipèdes qui ne savent que
+      transformer de magnifiques équilibres organiques en machines sans
+      vie et en mondes bétonnés et morts.
+    </p>
+
+    <p>
+      Unvanquished is an actively maintained evolution of the Tremulous game,
+      based on the Dæmon game engine, result of 20 years of development added
+      to the Tremulous gameplay and the Quake 3 engine.
+    </p>
+    <p xml:lang="fr">
+      Unvanquished est une évolution activement mantenue du jeu Tremulous,
+      fondée sur le moteur de jeu Dæmon, fruit de 20 ans de développement ajouté
+      au gameplay de Tremulous et au moteur de Quake 3.
+    </p>
   </description>
 
   <launchable type="desktop-id">net.unvanquished.Unvanquished.desktop</launchable>
@@ -37,30 +64,37 @@ Copyright 2021-2025 Thomas Debesse <dev@illwieckz.net>
     <screenshot type="default">
       <image type="source">https://unvanquished.net/wp-content/uploads/2021/06/20210619-143221-002.unvanquished-0.52.1-battlesuit-facing-tyrant.jpg</image>
       <caption>A mighty Tyrant facing a fearless battlesuit in Parpax.</caption>
+      <caption xml:lang="fr">Un puissant Tyrant affrontant une vaillante armure de combat dans Parpax.</caption>
     </screenshot>
     <screenshot>
       <image type="source">https://unvanquished.net/wp-content/uploads/2021/05/20210504-082658-002.unvanquished-0.52-human-builder.jpg</image>
       <caption>First person view of an human builder building a turret in Perseus.</caption>
+      <caption xml:lang="fr">Vue à la première personne d'un constructeur humain bâtissant une tourelle dans Perseus.</caption>
     </screenshot>
     <screenshot>
       <image type="source">https://unvanquished.net/wp-content/uploads/2021/06/20200909-025733-002.unvanquished-rocket-missile.jpg</image>
       <caption>A rocket passing by the viewer, launched by a rocket pod in Platform 23.</caption>
+      <caption xml:lang="fr">Une rocker passant devant le spectateur, lancée par une nacelle dans Platform 23.</caption>
     </screenshot>
     <screenshot>
       <image type="source">https://unvanquished.net/wp-content/uploads/2021/05/20210504-081116-002.unvanquished-0.52-alien-team.jpg</image>
       <caption>Family photo of all alien player classes in Platform 23.</caption>
+      <caption xml:lang="fr">Photo de famille de toutes les classes de joueur extraterrestre dans Plateform 23.</caption>
     </screenshot>
     <screenshot>
       <image type="source">https://unvanquished.net/wp-content/uploads/2021/06/20200909-001900-002.unvanquished-lasgun-weapon.jpg</image>
       <caption>First person view of an human soldier carrying a lasgun in Vega.</caption>
+      <caption xml:lang="fr">Vue à la première personne d'un soldat humain portant un lasgun dans Vega.</caption>
     </screenshot>
     <screenshot>
       <image type="source">https://unvanquished.net/wp-content/uploads/2021/05/20210504-083923-002.unvanquished-0.52-alien-builder.jpg</image>
       <caption>First person view of an alien builder wallwalking in Antares.</caption>
+      <caption xml:lang="fr">Vue à la première personne d'un constructeur extraterrestre marchant sur les murs dans Antares.</caption>
     </screenshot>
     <screenshot>
       <image type="source">https://unvanquished.net/wp-content/uploads/2021/05/20210504-072808-002.unvanquished-0.52-human-team.jpg</image>
       <caption>Human players wearing all kinds of armours and various weapons in Forlorn.</caption>
+      <caption xml:lang="fr">Joueurs humains portant toutes sortes d'armures et diverses armes dans Forlorn.</caption>
     </screenshot>
   </screenshots>
 
