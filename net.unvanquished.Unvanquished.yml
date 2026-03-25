@@ -44,6 +44,7 @@ modules:
       - type: git
         url: https://github.com/DaemonEngine/Daemon.git
         tag: unvanquished/0.56.1
+        commit: bd2e00699a6be2e47b9dbc4b8ba1974ff7e22c32
       - type: file
         path: net.unvanquished.Unvanquished.metainfo.xml
       - type: file
