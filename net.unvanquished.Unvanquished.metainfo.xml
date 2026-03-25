@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-Copyright 2021-2024 Antoine Fontaine <afontain@gnugen.ch>
+Copyright 2021-2026 Antoine Fontaine <antoinefontaine@posteo.net>
 Copyright 2021-2025 Thomas Debesse <dev@illwieckz.net>
 -->
 
@@ -103,6 +103,14 @@ Copyright 2021-2025 Thomas Debesse <dev@illwieckz.net>
   <url type="help">https://wiki.unvanquished.net</url>
 
   <releases>
+    <release version="0.56.1" date="2026-03-25">
+      <description>
+        <p>
+          This updates brings new rendering features, buxfixes and performance improvements. One of the most notable graphical change is the introduction of linear blending rendering for maps that support it. We also included antialiasing in the render with MSAA and FXAA implementations. Additionally, this release includes many performance improvements for old and new hardware and buxfixes to the graphics, sound system and user interface.
+        </p>
+      </description>
+      <url>https://unvanquished.net/unvanquished-0-56-we-deliver/</url>
+    </release>
     <release version="0.55.5" date="2025-09-28">
       <description>
         <p>
