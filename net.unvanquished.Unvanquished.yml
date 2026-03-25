@@ -65,8 +65,7 @@ modules:
         for f in daemon nacl_loader nacl_helper_bootstrap; do
           install -Dm0755 -t /app/lib/ $f
         done
-      - if [ "$FLATPAK_ARCH" == "x86_64" ]; then install -Dm0644 -t /app/lib/ irt_core-amd64.nexe; fi
-      - if [ "$FLATPAK_ARCH" == "aarch64" ]; then install -Dm0644 -t /app/lib/ irt_core-armhf.nexe; fi
+      - install -Dm0644 -t /app/lib/ irt_core-*.nexe
       - install -Dm0644 -t /app/share/applications/ net.unvanquished.Unvanquished.desktop
       - install -Dm0644 -t /app/share/metainfo/ net.unvanquished.Unvanquished.metainfo.xml
       - install -Dm0644 unvanquished.png /app/share/icons/hicolor/512x512/apps/$FLATPAK_ID.png
