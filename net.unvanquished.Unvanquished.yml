@@ -10,6 +10,7 @@ finish-args:
   - --socket=wayland # Wayland access
   - --socket=fallback-x11 # Fallback to X11, if wayland isn't available 
   - --share=ipc # X shared memory, required for x11
+  - --allow=multiarch # we need 32bit armhf syscalls on arm64
 cleanup:
   - /share/doc
 modules:
@@ -43,6 +44,7 @@ modules:
       - type: git
         url: https://github.com/DaemonEngine/Daemon.git
         tag: unvanquished/0.56.1
+        commit: bd2e00699a6be2e47b9dbc4b8ba1974ff7e22c32
       - type: file
         path: net.unvanquished.Unvanquished.metainfo.xml
       - type: file
@@ -54,13 +56,23 @@ modules:
         dest: external_deps/linux-amd64-default_11
         url: https://dl.unvanquished.net/deps/linux-amd64-default_11.tar.xz
         sha512: 02524ccb4e2fdbb36c052fb527ed42e1424a07b182bbd13d23ee0f763f45331ef33455893763bd691d7b1ee480013e4e2385a59438c691aec3d860cd8f6c4999
+      - type: archive
+        dest: external_deps/linux-arm64-default_11
+        url: https://dl.unvanquished.net/deps/linux-arm64-default_11.tar.xz
+        sha512: 12ec56cb24ba670a410f45237bd3ca5c9274fe2cbb60f6abbde85dcca2003b7cd8423f5075eb4d76957ab3e71422c05cd6a5e8800799ce24c310390f15a767ad
     no-make-install: true # no install phase is defined, we need a custom one
     post-install:
+      - >
+        if [ -f nacl_helper_bootstrap-armhf ]; then
+          install -Dm0755 -t /app/lib nacl_helper_bootstrap-armhf
+          install -Dm0755 -d /app/lib/lib-armhf
+          install -Dm0644 -t /app/lib/lib-armhf lib-armhf/*
+        fi
       - >
         for f in daemon nacl_loader nacl_helper_bootstrap; do
           install -Dm0755 -t /app/lib/ $f
         done
-      - install -Dm0644 -t /app/lib/ irt_core-amd64.nexe
+      - install -Dm0644 -t /app/lib/ irt_core-*.nexe
       - install -Dm0644 -t /app/share/applications/ net.unvanquished.Unvanquished.desktop
       - install -Dm0644 -t /app/share/metainfo/ net.unvanquished.Unvanquished.metainfo.xml
       - install -Dm0644 unvanquished.png /app/share/icons/hicolor/512x512/apps/$FLATPAK_ID.png
