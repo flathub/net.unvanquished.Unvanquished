@@ -63,6 +63,12 @@ modules:
     no-make-install: true # no install phase is defined, we need a custom one
     post-install:
       - >
+        if [ -f nacl_helper_bootstrap-armhf ]; then
+          install -Dm0755 -t /app/lib nacl_helper_bootstrap-armhf
+          install -Dm0755 -d /app/lib/lib-armhf
+          install -Dm0644 -t /app/lib/lib-armhf lib-armhf/*
+        fi
+      - >
         for f in daemon nacl_loader nacl_helper_bootstrap; do
           install -Dm0755 -t /app/lib/ $f
         done
