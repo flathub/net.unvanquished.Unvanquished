@@ -103,6 +103,14 @@ Copyright 2021-2025 Thomas Debesse <dev@illwieckz.net>
   <url type="help">https://wiki.unvanquished.net</url>
 
   <releases>
+    <release version="0.56.2" date="2026-05-12">
+      <description>
+        <p>
+          This updates enables the build point vampire mode by default, brings nicer rockets, fixes model rendering bugs, and improve compatibility with more hardware.
+        </p>
+      </description>
+      <url>https://unvanquished.net/unvanquished-0-56-2-quality/</url>
+    </release>
     <release version="0.56.1" date="2026-03-25">
       <description>
         <p>
